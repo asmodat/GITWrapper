@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netcoreapp2.1</TargetFrameworks>
+    <Product>GITWrapper</Product>
+    <Description>Amazon Web Services .NET Standard Extentions</Description>
+    <PackageId>Asmodat.GITWrapper</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageReleaseNotes>2018-12-11</PackageReleaseNotes>
+    <Version>1.0.0.32</Version>
+    <PackageProjectUrl>https://github.com/asmodat/GITWrapper</PackageProjectUrl>
+    <PackageTags>AWS, Asmodat, Amazon, Amazon SDK Extensions, Amazon SDK, SDK, Extensions, Amazon Web Services</PackageTags>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <Company>Asmodat</Company>
+    <Authors>Asmodat</Authors>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/10515811</PackageIconUrl>
+    <AssemblyVersion>1.0.0.32</AssemblyVersion>
+    <FileVersion>1.0.0.32</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Asmodat-Standard\Asmodat Standard\Asmodat Standard.csproj" />
+  </ItemGroup>
+
+</Project>
